@@ -2,9 +2,11 @@
   "name": "component-library",
   "version": "0.0.1",
   "description": "This is a POC project for creating a component library package",
-  "main": "index.js",
+  "main": "dist/cjs/main.js",
+  "module": "dist/es/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/matheus-esusu/cl-poc/issues"
   },
-  "homepage": "https://github.com/matheus-esusu/cl-poc#readme"
+  "homepage": "https://github.com/matheus-esusu/cl-poc#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "rollup": "^3.12.0",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5"
+  }
 }
