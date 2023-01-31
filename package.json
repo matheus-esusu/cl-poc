@@ -1,0 +1,24 @@
+{
+  "name": "component-library",
+  "version": "0.0.1",
+  "description": "This is a POC project for creating a component library package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheus-esusu/cl-poc.git"
+  },
+  "keywords": [
+    "React",
+    "Component",
+    "Library"
+  ],
+  "author": "Matheus Lopes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheus-esusu/cl-poc/issues"
+  },
+  "homepage": "https://github.com/matheus-esusu/cl-poc#readme"
+}
