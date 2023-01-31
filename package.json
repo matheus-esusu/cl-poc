@@ -6,7 +6,10 @@
   "module": "dist/es/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup --config"
+    "start": "rollup --config --watch",
+    "build": "rollup --config",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -24,7 +27,7 @@
   },
   "homepage": "https://github.com/matheus-esusu/cl-poc#readme",
   "engines": {
-    "node": ">=19.2.0"
+    "node": ">=16.19.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -35,6 +38,15 @@
     "@babel/runtime": "^7.20.13",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack4": "^6.5.16",
+    "@storybook/manager-webpack4": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.3.0",
     "rollup": "^3.12.0",
     "rollup-plugin-ts": "^3.2.0",
     "tslib": "^2.5.0",
@@ -47,16 +59,5 @@
     "@types/react": "^17.0.53",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  },
-  "peerDependenciesMeta": {
-    "@types/react": {
-      "optional": true
-    },
-    "@emotion/react": {
-      "optional": true
-    },
-    "@emotion/styled": {
-      "optional": true
-    }
   }
 }
