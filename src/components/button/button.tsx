@@ -1,4 +1,9 @@
-import { Button as MuiButton, ButtonProps } from "@mui/material";
+import {
+  Button as MuiButton,
+  ButtonProps as MUIButtonProps,
+} from "@mui/material";
+
+export type ButtonProps = MUIButtonProps;
 
 function Button(props: ButtonProps) {
   return <MuiButton {...props} />;
