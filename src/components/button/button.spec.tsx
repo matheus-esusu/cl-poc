@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/experimental-ct-react";
-import { Button } from "../../../src/components";
-import { ThemeProvider } from "../../../src/layout";
+import Button from "./button";
+import { ThemeProvider } from "../../layout";
 
 test.use({
   headless: false,
