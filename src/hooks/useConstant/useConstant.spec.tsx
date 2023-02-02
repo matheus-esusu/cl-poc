@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/experimental-ct-react";
-import { UseConstantComponentTest } from "./useConstant";
+import UseConstantComponentTest from "./useContant.cp.spec";
 
 test("should not update the constat", async ({ mount }) => {
   const component = await mount(
